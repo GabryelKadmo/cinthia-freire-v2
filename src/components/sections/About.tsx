@@ -1,59 +1,60 @@
 export default function About() {
     return (
-        <section id="sobre" className="py-20 bg-gray-950">
+        <section id="sobre" className="py-20 bg-gradient-to-br from-white via-amber-50 to-white">
             <div className="container mx-auto px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold text-white mb-6">
+                            <h2 className="text-4xl font-bold text-amber-700 mb-6">
                                 Sobre Cinthia Freire
                             </h2>
-                            <p className="text-gray-300 mb-6 leading-relaxed">
+                            <p className="text-gray-700 mb-6 leading-relaxed">
                                 Atuo como especialista em direito de família e sucessões, possuindo diversas formações na área.
                                 Sou registrada na OAB/BA sob o nº 69.826, membro do IBDFAM (Instituto Brasileiro de Direito de Família)
                                 e integro a comissão de direito de família da OAB Bahia.
                             </p>
 
-                            <p className="text-gray-300 mb-6 leading-relaxed">
+                            <p className="text-gray-700 mb-6 leading-relaxed">
                                 Dedico-me especialmente aos casos que envolvem relações familiares complexas, sempre buscando
                                 soluções equilibradas e humanizadas. Minha abordagem prioriza o diálogo construtivo e a
                                 resolução pacífica de conflitos, valorizando o bem-estar de todos os envolvidos.
                             </p>
 
-                            <p className="text-gray-300 mb-8 leading-relaxed">
+                            <p className="text-gray-700 mb-8 leading-relaxed">
                                 Minha missão é oferecer consultoria jurídica especializada, priorizando a ética, transparência
                                 e excelência profissional. Atuo de forma preventiva e resolutiva em questões sucessórias e
                                 familiares, construindo caminhos jurídicos sólidos e personalizados para cada cliente.
-                            </p><div className="space-y-4">
+                            </p>
+                            <div className="space-y-4">
                                 <div className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-amber-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-amber-400 rounded-full mt-2"></div>
                                     <div>
-                                        <h4 className="font-semibold text-white">Registro Profissional</h4>
-                                        <p className="text-gray-300">OAB/BA 69.826 - Ativa</p>
+                                        <h4 className="font-semibold text-amber-700">Registro Profissional</h4>
+                                        <p className="text-gray-700">OAB/BA 69.826 - Ativa</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-amber-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-amber-400 rounded-full mt-2"></div>
                                     <div>
-                                        <h4 className="font-semibold text-white">Especialização</h4>
-                                        <p className="text-gray-300">Direito de Família e Sucessões</p>
+                                        <h4 className="font-semibold text-amber-700">Especialização</h4>
+                                        <p className="text-gray-700">Direito de Família e Sucessões</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-amber-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-amber-400 rounded-full mt-2"></div>
                                     <div>
-                                        <h4 className="font-semibold text-white">Instituições</h4>
-                                        <p className="text-gray-300">Membro IBDFAM - Comissão OAB/BA</p>
+                                        <h4 className="font-semibold text-amber-700">Instituições</h4>
+                                        <p className="text-gray-700">Membro IBDFAM - Comissão OAB/BA</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-amber-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-amber-400 rounded-full mt-2"></div>
                                     <div>
-                                        <h4 className="font-semibold text-white">Certificações</h4>
-                                        <p className="text-gray-300">Mediação Familiar e Arbitragem</p>
+                                        <h4 className="font-semibold text-amber-700">Certificações</h4>
+                                        <p className="text-gray-700">Mediação Familiar e Arbitragem</p>
                                     </div>
                                 </div>
                             </div>
