@@ -64,7 +64,7 @@ export default function Hero() {
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
                             <Button
                                 size="lg"
-                                className="group bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                                className="group bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
                             >
                                 Agendar Consulta
                                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -72,7 +72,7 @@ export default function Hero() {
                             <Button
                                 variant="outline"
                                 size="lg"
-                                className="border-2 border-amber-600/50 text-amber-400 hover:bg-amber-600 hover:text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 bg-transparent backdrop-blur-sm"
+                                className="border-2 border-amber-600/50 text-amber-400 hover:bg-amber-600 hover:text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent backdrop-blur-sm"
                             >
                                 Conheça Nossos Serviços
                             </Button>

@@ -381,3 +381,7 @@
   opacity: 0;
   animation-fill-mode: forwards;
 }
+
+* {
+  scroll-behavior: smooth;
+}

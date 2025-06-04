@@ -20,35 +20,30 @@ export default function Header() {
                             <h1 className="text-4xl font-bold text-white">Cinthia Freire</h1>
                             <p className="text-sm text-white">Advocacia & Consultoria</p>
                         </div>
-                    </div>
-                    {/* Desktop Navigation */}
-                    <nav className="hidden md:flex space-x-8">
-                        <a href="#inicio" className="text-white hover:text-amber-400 transition-colors">Início</a>
-                        <a href="#sobre" className="text-white hover:text-amber-400 transition-colors">Sobre</a>
-                        <a href="#servicos" className="text-white hover:text-amber-400 transition-colors">Serviços</a>
-                        <a href="#experiencia" className="text-white hover:text-amber-400 transition-colors">Experiência</a>
-                        <a href="#contato" className="text-white hover:text-amber-400 transition-colors">Contato</a>
+                    </div>                    <nav className="hidden md:flex space-x-8">
+                        <a href="#inicio" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Início</a>
+                        <a href="#sobre" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Sobre</a>
+                        <a href="#servicos" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Serviços</a>
+                        {/* <a href="#experiencia" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Experiência</a> */}
+                        <a href="#contato" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Contato</a>
                     </nav>
 
-                    {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden"
+                        className="cursor-pointer md:hidden"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
-                {/* Mobile Navigation */}
-                {isMenuOpen && (
-                    <nav className="md:hidden mt-4 py-4 border-t border-gray-700">
-                        <div className="flex flex-col space-y-4">
-                            <a href="#inicio" className="text-white hover:text-amber-400 transition-colors">Início</a>
-                            <a href="#sobre" className="text-white hover:text-amber-400 transition-colors">Sobre</a>
-                            <a href="#servicos" className="text-white hover:text-amber-400 transition-colors">Serviços</a>
-                            <a href="#experiencia" className="text-white hover:text-amber-400 transition-colors">Experiência</a>
-                            <a href="#contato" className="text-white hover:text-amber-400 transition-colors">Contato</a>
-                        </div>
-                    </nav>
+                {isMenuOpen && (<nav className="md:hidden mt-4 py-4 border-t border-gray-700">
+                    <div className="flex flex-col space-y-4">
+                        <a href="#inicio" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Início</a>
+                        <a href="#sobre" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Sobre</a>
+                        <a href="#servicos" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Serviços</a>
+                        {/* <a href="#experiencia" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Experiência</a> */}
+                        <a href="#contato" className="cursor-pointer text-white hover:text-amber-400 transition-colors">Contato</a>
+                    </div>
+                </nav>
                 )}
             </div>
         </header>

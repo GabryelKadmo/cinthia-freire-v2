@@ -83,35 +83,34 @@ export default function Services() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">          
-                                      {services.map((service, index) => (
-                        <div
-                            key={index}
-                            className="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gray-700 flex flex-col h-full"
-                        >
-                            <div className="w-16 h-16 bg-amber-600 rounded-lg flex items-center justify-center mb-6">
-                                <service.icon className="w-8 h-8 text-white" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {services.map((service, index) => (
+                            <div
+                                key={index}
+                                className="cursor-pointer bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gray-700 flex flex-col h-full"
+                            >
+                                <div className="w-16 h-16 bg-amber-600 rounded-lg flex items-center justify-center mb-6">
+                                    <service.icon className="w-8 h-8 text-white" />
+                                </div>
+
+                                <h3 className="text-xl font-semibold text-white mb-4">
+                                    {service.title}
+                                </h3>
+
+                                <p className="text-gray-300 leading-relaxed flex-grow">
+                                    {service.description}
+                                </p>
+                                <div className="mt-6">
+                                    <a
+                                        href="#contato"
+                                        className="cursor-pointer text-amber-400 hover:text-amber-300 font-semibold transition-all duration-300 inline-flex items-center group"
+                                    >
+                                        Saiba mais
+                                        <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                                    </a>
+                                </div>
                             </div>
-
-                            <h3 className="text-xl font-semibold text-white mb-4">
-                                {service.title}
-                            </h3>
-
-                            <p className="text-gray-300 leading-relaxed flex-grow">
-                                {service.description}
-                            </p>
-
-                            <div className="mt-6">
-                                <a
-                                    href="#contato"
-                                    className="text-amber-400 hover:text-amber-300 font-semibold transition-all duration-300 inline-flex items-center group"
-                                >
-                                    Saiba mais
-                                    <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
                     </div>
 
                     <div className="mt-16 text-center">
@@ -120,7 +119,7 @@ export default function Services() {
                         </p>
                         <a
                             href="#contato"
-                            className="inline-block bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                            className="cursor-pointer inline-block bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg"
                         >
                             Falar com Advogada
                         </a>

@@ -2,7 +2,7 @@ import Header from '../components/sections/Header'
 import Hero from '../components/sections/Hero'
 import About from '../components/sections/About'
 import Services from '../components/sections/Services'
-import Experience from '../components/sections/Experience'
+// import Experience from '../components/sections/Experience'
 import Contact from '../components/sections/Contact'
 import Footer from '../components/sections/Footer'
 
@@ -13,7 +13,7 @@ export default function LandingPage() {
             <Hero />
             <About />
             <Services />
-            <Experience />
+            {/* <Experience /> */}
             <Contact />
             <Footer />
         </div>
