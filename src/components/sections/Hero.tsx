@@ -175,8 +175,7 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-            </div>
-            {/* Bottom Wave */}
+            </div>            {/* Bottom Wave */}
             <div className="absolute bottom-0 left-0 w-full">
                 <svg viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
