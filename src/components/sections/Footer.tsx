@@ -93,14 +93,8 @@ export default function Footer() {
                                 © 2025 Cinthia Freire Advocacia. Todos os direitos reservados.
                             </div>
                             <div className="flex space-x-6 text-sm">
-                                <a href="#" className="cursor-pointer text-gray-400 hover:text-amber-400 transition-colors">
+                                <a href="https://www.termsfeed.com/live/7101aef2-3f12-46ff-b0ce-14cf54bebe83" target="_blank" rel="noopener noreferrer" className="cursor-pointer text-gray-400 hover:text-amber-400 transition-colors">
                                     Política de Privacidade
-                                </a>
-                                <a href="#" className="cursor-pointer text-gray-400 hover:text-amber-400 transition-colors">
-                                    Termos de Uso
-                                </a>
-                                <a href="#" className="cursor-pointer text-gray-400 hover:text-amber-400 transition-colors">
-                                    Código de Ética
                                 </a>
                             </div>
                         </div>
