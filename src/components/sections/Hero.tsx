@@ -138,14 +138,14 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            <div className="absolute -top-6 -right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl animate-float">
+                            <div className="absolute -top-6 -right-2 md:-right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl animate-float">
                                 <div className="flex items-center space-x-3">
                                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                                     <span className="text-sm font-medium text-gray-700">Disponível para consulta</span>
                                 </div>
                             </div>
 
-                            <div className="absolute -bottom-6 -left-6 bg-amber-400 rounded-lg p-4 shadow-xl text-white animate-float-slow">
+                            <div className="absolute -bottom-6 md:-left-6 bg-amber-400 rounded-lg p-4 shadow-xl text-white animate-float-slow">
                                 <div className="text-center">
                                     <div className="text-2xl font-bold">100%</div>
                                     <div className="text-xs">Comprometimento</div>
