@@ -27,7 +27,6 @@ export default function Header() {
                         <a href="#contato" className="cursor-pointer text-gray-800 hover:text-amber-700 font-medium transition-colors">Contato</a>
                     </nav>
 
-                    {/* Burger menu mobile usando Sheet */}
                     <div className="md:hidden">
                         <Sheet>
                             <SheetTrigger asChild>
@@ -37,7 +36,6 @@ export default function Header() {
                             </SheetTrigger>
                             <SheetContent side="right" className="w-80 p-0 bg-white">
                                 <div className="flex flex-col h-full">
-                                    {/* Header do menu com logo */}
                                     <div className="p-6 border-b border-amber-100 bg-gradient-to-r from-amber-50 to-white">
                                         <div className="flex items-center gap-4">
                                             <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
@@ -51,7 +49,6 @@ export default function Header() {
                                         </div>
                                     </div>
 
-                                    {/* Navegação */}
                                     <div className="flex-1 p-6">
                                         <nav className="flex flex-col gap-4">
                                             <SheetClose asChild>
@@ -81,7 +78,6 @@ export default function Header() {
                                         </nav>
                                     </div>
 
-                                    {/* Footer do menu */}
                                     <div className="p-6 border-t border-amber-100 bg-gradient-to-r from-white to-amber-50">
                                         <div className="text-center">
                                             <div className="text-xs text-gray-500 mb-2">© 2025 Cinthia Freire</div>

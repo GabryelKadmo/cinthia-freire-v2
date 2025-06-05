@@ -36,24 +36,18 @@ export default function Services() {
 
     return (
         <section id="servicos" className="relative py-20 bg-gradient-to-br from-white to-white overflow-hidden">
-            {/* Background Effects */}
             <div className="absolute inset-0">
-                {/* Subtle grid pattern */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(251,191,36,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(251,191,36,0.04)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-                {/* Gradient overlays */}
                 <div className="absolute inset-0 bg-gradient-radial from-amber-100/40 via-transparent to-transparent"></div>
-                {/* Floating geometric shapes */}
                 <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-amber-200/30 to-amber-100/20 rounded-full blur-xl animate-float"></div>
                 <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-blue-200/20 to-purple-200/10 rounded-full blur-xl animate-float-slow"></div>
                 <div className="absolute bottom-32 left-1/4 w-40 h-40 bg-gradient-to-r from-amber-100/20 to-orange-100/10 rounded-full blur-2xl animate-float"></div>
                 <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-gradient-to-r from-amber-200/20 to-amber-100/10 rounded-full blur-xl animate-float-slow"></div>
-                {/* Decorative lines */}
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-200 to-transparent"></div>
                     <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-100/70 to-transparent"></div>
                     <div className="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-100/40 to-transparent"></div>
                 </div>
-                {/* Corner decorations */}
                 <div className="absolute top-8 left-8 w-6 h-6 border-l-2 border-t-2 border-amber-200/40"></div>
             </div>
             <div className="container mx-auto px-4 relative z-10">
@@ -78,14 +72,3 @@ export default function Services() {
         </section>
     )
 }
-
-/*
-Adicione no seu CSS global (ex: index.css):
-@keyframes bg-float {
-  0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 40px); }
-}
-.animate-bg-float {
-  animation: bg-float 8s ease-in-out infinite;
-}
-*/
