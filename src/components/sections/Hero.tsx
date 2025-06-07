@@ -29,7 +29,7 @@ export default function Hero() {
             </div>
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-auto py-20">
                     <div className="space-y-8 animate-fade-in-left">
                         <div className="inline-flex items-center bg-amber-100/60 border border-amber-300/40 rounded-full px-4 py-2 text-sm font-medium text-amber-700">
                             <Star className="w-4 h-4 mr-2 fill-current text-amber-400" />
@@ -92,20 +92,17 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-
-                    <div className="relative animate-fade-in-right">
+                    <div className="relative animate-fade-in-right max-w-xl mx-auto">
                         <div className="relative">
                             <div className="relative bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl shadow-2xl overflow-hidden">
                                 <div className="aspect-[4/5] flex items-center justify-center p-8">
                                     <div className="text-center text-gray-700 relative w-full h-full">
                                         <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl"></div>
-
                                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                                             <div className="opacity-[0.02] w-32 h-32 md:w-auto md:h-auto">
                                                 <img src="/balance.png" alt="balance icon" className="w-full h-full object-contain" />
                                             </div>
                                         </div>
-
                                         <div className="absolute top-8 left-8">
                                             <Scale className="w-12 h-12 text-amber-600/30" />
                                         </div>
@@ -118,18 +115,17 @@ export default function Hero() {
                                         <div className="absolute bottom-8 right-8">
                                             <Award className="w-10 h-10 text-amber-600/30" />
                                         </div>
-
-                                        <div className="relative z-10 flex flex-col items-center justify-center h-full p-4 md:p-0">
+                                        <div className="relative z-10 flex flex-col items-center justify-center h-full p-5 md:p-6">
                                             <div className="w-24 h-24 md:w-32 md:h-32 mb-4 md:mb-6 flex items-center justify-center bg-black rounded-full shadow-lg">
                                                 <img
                                                     src="/Logo.svg"
                                                     alt="Cinthia Freire Logo"
-                                                    className="w-16 h-16 md:w-24 md:h-24 object-contain"
+                                                    className="w-16 h-16 md:w-22 md:h-22 object-contain"
                                                 />
                                             </div>
-                                            <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-2 text-center">Dra. Cinthia Freire</h3>
-                                            <p className="text-base md:text-lg text-amber-700 font-medium mb-3 md:mb-4 text-center">Advogada Especialista</p>
-                                            <div className="space-y-1 text-xs md:text-lg text-gray-800 font-medium text-center">
+                                            <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 text-center">Dra. Cinthia Freire</h3>
+                                            <p className="text-lg md:text-xl text-amber-700 font-medium mb-3 md:mb-4 text-center">Advogada Especialista</p>
+                                            <div className="space-y-1 text-base md:text-lg text-gray-800 font-medium text-center">
                                                 <p className='font-bold'>OAB/BA 69.826</p>
                                                 <p className="px-2">Especialista em direito de família e sucessões.</p>
                                             </div>
@@ -137,8 +133,7 @@ export default function Hero() {
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="absolute -top-6 -right-2 md:-right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl animate-float">
+                            <div className="absolute -top-6 -right-3 md:-right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl animate-float">
                                 <div className="flex items-center space-x-3">
                                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                                     <span className="text-sm font-medium text-gray-700">Disponível para consulta</span>
@@ -155,11 +150,44 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 left-0 w-full">
-                <svg viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+                <svg
+                    viewBox="0 0 1200 120"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-full h-auto"
+                >
+                    <defs>
+                        <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stopColor="rgb(255, 251, 235)" stopOpacity="0.9" />
+                            <stop offset="100%" stopColor="rgb(255, 251, 235)" stopOpacity="1" />
+                        </linearGradient>
+                        <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stopColor="rgb(254, 243, 199)" stopOpacity="0.7" />
+                            <stop offset="100%" stopColor="rgb(255, 251, 235)" stopOpacity="0.9" />
+                        </linearGradient>
+                        <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stopColor="rgb(253, 230, 138)" stopOpacity="0.5" />
+                            <stop offset="100%" stopColor="rgb(254, 243, 199)" stopOpacity="0.7" />
+                        </linearGradient>
+                    </defs>
+
                     <path
-                        d="M0 120V46.29c47.79 22.2 103.59 32.17 171 32.17 160 0 293-93.17 453-93.17 160 0 293 93.17 453 93.17 67.41 0 123.21-9.97 171-32.17V120z"
-                        fill="rgb(255, 251, 235)"
+                        d="M0 120V65C150 45 300 25 450 35C600 45 750 65 900 55C1050 45 1200 25 1200 25V120Z"
+                        fill="url(#waveGradient1)"
+                        className="animate-wave"
+                    />
+
+                    <path
+                        d="M0 120V75C200 50 400 30 600 40C800 50 1000 70 1200 60V120Z"
+                        fill="url(#waveGradient2)"
+                        className="animate-wave-reverse"
+                    />
+
+                    <path
+                        d="M0 120V85C100 70 250 45 400 55C550 65 700 85 850 75C1000 65 1150 45 1200 50V120Z"
+                        fill="url(#waveGradient3)"
+                        className="animate-wave-slow"
                     />
                 </svg>
             </div>

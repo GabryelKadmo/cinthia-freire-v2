@@ -126,7 +126,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* Animações customizadas para a página 404 */
 @keyframes draw-line {
   0% {
     stroke-dasharray: 0 1000;
@@ -251,12 +250,10 @@
   }
 }
 
-/* Gradient radial personalizado */
 .bg-gradient-radial {
   background: radial-gradient(circle, var(--tw-gradient-stops));
 }
 
-/* Animações personalizadas para Hero */
 @keyframes hero-float {
   0%,
   100% {
@@ -299,7 +296,6 @@
   }
 }
 
-/* Aplicação das animações */
 .animate-draw-line {
   animation: draw-line 2s ease-in-out forwards;
 }
