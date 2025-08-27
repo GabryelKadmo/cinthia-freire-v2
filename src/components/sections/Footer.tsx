@@ -50,7 +50,7 @@ export default function Footer() {
                                         <FaWhatsapp className="w-5 h-5 text-white" />
                                     </a>
                                     <a
-                                        href="https://instagram.com/cinthiafreireadvocacia"
+                                        href="https://www.instagram.com/cinthia_af_sampaio"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="cursor-pointer w-10 h-10 bg-gradient-to-r from-pink-400 via-purple-500 to-yellow-400 hover:from-pink-500 hover:to-yellow-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-md"
