@@ -5,24 +5,11 @@ export default function About() {
         <section id="sobre" className="py-16 sm:py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6">
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div className="flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-                        {/* Left - Photo */}
-                        <div className="relative flex items-center justify-center lg:justify-start">
-                            <div className="relative max-w-md mx-auto lg:mx-0">
-                                <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl bg-slate-100">
-                                    <img
-                                        src="/cinthia-pfp.webp"
-                                        alt="Dra. Cinthia Freire"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Right - Content */}
-                        <div className="flex items-center lg:items-start">
-                            <div className="space-y-8 w-full">
+                        {/* Content - First on mobile, right on desktop */}
+                        <div className="flex items-center lg:items-start order-1 lg:order-2 w-full">
+                            <div className="space-y-6 lg:space-y-8 w-full">
                                 {/* Header */}
                                 <div className="space-y-4">
                                     <h3 className="text-lg font-semibold text-amber-700 uppercase tracking-wider">
@@ -54,7 +41,7 @@ export default function About() {
                                 </div>
 
                                 {/* Key Specializations */}
-                                <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                                     <div className="text-center bg-amber-50 rounded-lg py-3 px-2">
                                         <div className="text-sm font-semibold text-slate-900">Direito Internacional</div>
                                         <div className="text-xs text-slate-600">EBRADI</div>
@@ -102,6 +89,19 @@ export default function About() {
                                             <p className="text-slate-600">Mediação e Arbitragem</p>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Photo - Second on mobile, left on desktop */}
+                        <div className="relative flex items-center justify-center lg:justify-start order-2 lg:order-1">
+                            <div className="relative max-w-xs sm:max-w-sm lg:max-w-md mx-auto lg:mx-0">
+                                <div className="aspect-[3/4] lg:aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl bg-slate-100">
+                                    <img
+                                        src="/cinthia-pfp.webp"
+                                        alt="Dra. Cinthia Freire"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
                             </div>
                         </div>
