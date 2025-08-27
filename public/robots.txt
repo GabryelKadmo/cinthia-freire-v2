@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.cinthiafreire.adv.br/sitemap.xml
+
+# Crawl-delay (opcional, ajuda a não sobrecarregar o servidor)
+Crawl-delay: 1
+
+# Permitir acesso a recursos importantes
+Allow: /cinthia-SEO.jpg
+Allow: /Logo.svg
+Allow: /favicon.ico
+
+# Informações adicionais para motores de busca
+# Host: www.cinthiafreire.adv.br
