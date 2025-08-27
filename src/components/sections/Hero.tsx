@@ -69,7 +69,11 @@ export default function Hero() {
                             <Button
                                 variant="outline"
                                 size="lg"
-                                className="border-2 border-slate-800 text-slate-800 px-8 py-4 text-lg font-bold shadow-lg bg-white rounded-xl w-full sm:w-auto"
+                                className="border-2 border-amber-200 text-slate-800 px-8 py-4 text-lg font-medium shadow-lg bg-white rounded-xl w-full sm:w-auto transition-all duration-300 ease-in-out hover:bg-amber-50 hover:text-black hover:border-amber-300 hover:shadow-xl hover:scale-105 active:scale-95"
+                                onClick={() => {
+                                    const servicosSection = document.getElementById('servicos');
+                                    servicosSection?.scrollIntoView({ behavior: 'smooth' });
+                                }}
                             >
                                 Áreas de Atuação
                             </Button>

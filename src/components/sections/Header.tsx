@@ -7,14 +7,24 @@ export default function Header() {
             <div className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                        <div className="w-16 h-16 flex items-center justify-center">
+                        <div
+                            className="w-16 h-16 flex items-center justify-center cursor-pointer"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                        >
                             <img
                                 src="/Logo.svg"
                                 alt="Cinthia Freire Logo"
                                 className="w-16 h-16 object-contain"
                             />
                         </div>
-                        <div>
+                        <div
+                            className="cursor-pointer"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                        >
                             <h1 className="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-900 bg-clip-text text-transparent drop-shadow-sm">Cinthia Freire</h1>
                             <p className="text-sm bg-gradient-to-r from-yellow-600 to-yellow-900 bg-clip-text text-transparent">Advocacia & Consultoria</p>
                         </div>
@@ -38,10 +48,20 @@ export default function Header() {
                                 <div className="flex flex-col h-full">
                                     <div className="p-6 border-b border-amber-100 bg-gradient-to-r from-amber-50 to-white">
                                         <div className="flex items-center gap-4">
-                                            <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
+                                            <div
+                                                className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg cursor-pointer"
+                                                onClick={() => {
+                                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                                }}
+                                            >
                                                 <img src="/Logo.svg" alt="Logo" className="w-12 h-12 object-contain" />
                                             </div>
-                                            <div>
+                                            <div
+                                                className="cursor-pointer"
+                                                onClick={() => {
+                                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                                }}
+                                            >
                                                 <h1 className="text-2xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-900 bg-clip-text text-transparent drop-shadow-sm">Cinthia Freire</h1>
 
                                                 <p className="text-xs text-amber-600 mt-1">OAB/BA 69.826</p>
